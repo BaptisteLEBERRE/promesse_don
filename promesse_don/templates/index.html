@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Index</title>
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/promesse_don.css') }}">
+</head>
+<body>
+	<div class="container">
+		<img src="https://www.commeon.com/sites/default/files/Logo%20ADSF%20carre%CC%81.jpg" />
+		<p class= "emphasis">Améliorer la prise en charge et l’état de santé des femmes en situation de précarité</p>
+
+		<p>L’association <b>ADSF – Agir pour la Santé des Femmes</b> vise à améliorer la prise en charge et l’état de santé globale des femmes en situation de grande exclusion en organisant des actions favorisant leur accès à des soins adaptés de droit commun à leur genre et à leur parcours de vie.</p>
+		<b><a href="https://adsfasso.org/">adsfasso.org</a></b>
+		<ul>
+			<li><a href="{{ url_for('formulaire') }}">Je fais un don.</a></li>
+			<li><a href="{{ url_for('infos') }}">Infos sur les dons.</a></li>
+		<ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Infos</title>
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/promesse_don.css') }}">
+</head>
+<body>
+	<div class="container">
+		<header>Infos dons.</header>
+		<p>Nous avons récolté <b>{{money_raised}} €</b>, avec {{donations_count}} don(s) individuel(s).</p>
+		<p>Liste des dons :</p>
+{{ donation_tab }}
+	</div>
+	<div>
+		<a href="{{ url_for('index') }}">Retour à l'accueil.</a>
+	</div>
+</body>
+</html>
